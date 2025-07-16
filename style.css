@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ff3b7f;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('fondo1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.boton-reservar {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ff3b7f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.boton-reservar:hover {
+  background: #e02e6f;
+}
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+section img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  background: #ff3b7f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+}
